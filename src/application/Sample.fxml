@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <right>
+      <FlowPane alignment="CENTER" prefHeight="51.0" prefWidth="884.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="before" alignment="CENTER" prefHeight="30.0" prefWidth="150.0">
+               <FlowPane.margin>
+                  <Insets right="15.0" />
+               </FlowPane.margin>
+            </TextField>
+            <ComboBox fx:id="from" prefWidth="150.0">
+               <FlowPane.margin>
+                  <Insets right="15.0" />
+               </FlowPane.margin>
+            </ComboBox>
+            <Label text="=" textAlignment="CENTER" />
+            <TextField fx:id="after" prefHeight="30.0" prefWidth="150.0">
+               <FlowPane.margin>
+                  <Insets left="15.0" right="15.0" />
+               </FlowPane.margin>
+            </TextField>
+            <ComboBox fx:id="to" prefWidth="150.0" />
+            <Button fx:id="convert" mnemonicParsing="false" onAction="#handleConvert" text="Convert">
+               <FlowPane.margin>
+                  <Insets left="15.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button fx:id="clear" mnemonicParsing="false" onAction="#handleClear" text="Clear">
+               <FlowPane.margin>
+                  <Insets left="15.0" />
+               </FlowPane.margin>
+            </Button>
+         </children>
+      </FlowPane>
+   </right>
+</BorderPane>
