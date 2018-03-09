@@ -49,16 +49,16 @@ public class SampleController {
 			to.getSelectionModel().select(0);
 		}
 		before.setOnKeyPressed(event -> {
+			after.clear();
 			check = 1;
 			if (event.getCode().equals(KeyCode.ENTER)){
-				System.out.print(1);
 				convert.fire();
 			}
 		});
 		after.setOnKeyPressed(event -> {
+			before.clear();
 			check = 2;
 			if (event.getCode().equals(KeyCode.ENTER)){
-				System.out.print(2);
 				convert.fire();
 			}
 		});
@@ -71,7 +71,6 @@ public class SampleController {
 	 */
 	@FXML
 	public void converterClick(ActionEvent e){
-		System.out.print(check);
 		if(check == 1) handleConvertLR();
 		if(check == 2) handleConvertRL();
 	}
