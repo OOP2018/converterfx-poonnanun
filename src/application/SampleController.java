@@ -127,7 +127,7 @@ public class SampleController {
 		
 		//Check if answer isn't null
 		if(afterNumber != 0){
-			after.setText(String.valueOf(afterNumber));
+			after.setText(String.format("%.4g", afterNumber));
 		}
 		
 		//in case that something went wrong
@@ -185,7 +185,7 @@ public class SampleController {
 			}
 			//Check if answer is not null
 			if(afterNumber != 0){
-				before.setText(String.valueOf(afterNumber));
+				before.setText(String.format("%.4g",afterNumber));
 				return;
 			}
 			//In case that something wrong
