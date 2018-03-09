@@ -27,7 +27,7 @@
                </FlowPane.margin>
             </TextField>
             <ComboBox fx:id="to" prefWidth="150.0" />
-            <Button fx:id="convert" mnemonicParsing="false" onAction="#handleConvert" text="Convert">
+            <Button fx:id="convert" mnemonicParsing="false" onAction="#converterClick" text="Convert">
                <FlowPane.margin>
                   <Insets left="15.0" />
                </FlowPane.margin>
