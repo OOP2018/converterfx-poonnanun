@@ -42,12 +42,15 @@ public class SampleController {
 	 */
 	@FXML 
 	public void initialize(){
+		//add item to combo box
 		if(from != null && to != null){
 			from.getItems().addAll(Length.values());
 			from.getSelectionModel().select(0);
 			to.getItems().addAll(Length.values());
 			to.getSelectionModel().select(0);
 		}
+		
+		//check which field that user press
 		before.setOnKeyPressed(event -> {
 			after.clear();
 			check = 1;
@@ -62,7 +65,6 @@ public class SampleController {
 				convert.fire();
 			}
 		});
-		
 	}
 	
 	/**
